@@ -14,12 +14,12 @@ module FormsLab
 
       @pirate=Pirate.new(params[:pirate])
 
-      # binding.pry
-      # @ships = []
-      # params[:pirates][:ships].each do |t|
-      #     @ships << Ship.new(t)
-      #     binding.pry
-      #   end
+
+      @ships = []
+      params[:pirates][:ships].each do |t|
+          @ships << Ship.new(t)
+          binding.pry
+        end
 
       erb :'pirates/show'
 

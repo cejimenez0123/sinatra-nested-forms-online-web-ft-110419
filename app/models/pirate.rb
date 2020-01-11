@@ -1,5 +1,5 @@
 class Pirate
-  attr_accessor :name,:weight,:height, :ships
+  attr_accessor :name,:weight,:height
   @@pirates = []
   def initialize(hash)
     @name = hash[:name]
